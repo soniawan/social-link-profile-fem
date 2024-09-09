@@ -1,6 +1,102 @@
 @font-face {
   font-family: "Inter";
-  src: url("../assets/fonts/static/Inter-Bold.ttf"),
-    url("../assets/fonts/static/Inter-Regular.ttf"),
-    url("../assets/fonts/static/Inter-SemiBold.ttf");
+  src: url("../assets/fonts/static/Inter-Regular.ttf"),
+    url("../assets/fonts/static/Inter-SemiBold.ttf"),
+    url("../assets/fonts/static/Inter-Bold.ttf");
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+/* Body */
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Profile Container */
+.profile-container {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  padding: 40px;
+  margin: 30px;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 70px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Profile Header */
+.profile-address {
+  color: hsl(75, 94%, 57%);
+  font-style: normal;
+  margin-top: 10px;
+}
+
+.profile-description {
+  margin: 20px 0 20px 0;
+}
+
+/* Links */
+nav {
+  width: 100%;
+}
+
+.social-link {
+  display: block;
+  background-color: hsl(0, 0%, 20%);
+  padding: 13px 0;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition-duration: 700ms;
+}
+
+.social-link:hover {
+  background-color: hsl(0, 0%, 30%);
+}
+
+/* Responsive for Mobile */
+@media screen and (max-width: 405px) {
+  body {
+    font-size: 12px;
+  }
+
+  .profile-img {
+    width: 60px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
 }
